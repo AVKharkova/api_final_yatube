@@ -2,7 +2,7 @@ from rest_framework import permissions
 
 
 class IsAuthorOrReadOnly(permissions.BasePermission):
-    '''Кастомное разрешение на корректировку и удаление контента автором.'''
+    """Кастомное разрешение на корректировку и удаление контента автором."""
 
     def has_permission(self, request, view):
         # Аннонимам разрешаем GET-запросы
